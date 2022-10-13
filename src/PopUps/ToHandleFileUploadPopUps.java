@@ -16,7 +16,7 @@ public class ToHandleFileUploadPopUps {
         driver.get("https://www.naukri.com/registration/createAccount?othersrcp=22636");
 
         driver.findElement(By.xpath("//button[text()='Upload Resume']")).click();
-        Runtime.getRuntime().exec
+        // Runtime.getRuntime().exec
     }
 
 }
