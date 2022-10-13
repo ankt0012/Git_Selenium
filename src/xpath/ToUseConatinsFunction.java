@@ -7,13 +7,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ToUseConatinsFunction {
 
 	public static void main(String[] args) {
-		String xpectederrormesg = "Username";
+		String expectedMsg = "Username";
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.actitime.com/login.do");
-		String text = driver.findElement(By.xpath("//nobr[text()='actiTIME 2020 Online']")).getText();
-		System.out.println(text);
+		String actualMsg = driver.findElement(By.xpath("//nobr[text()='actiTIME 2020 Online']")).getText();
+		if (actualMsg.contains(expectedMsg)) {
+			System.out.println("Pass : the expected message is same in automated screen");
+		} else {
+			System.out.println("Fail : the expected message is not same in automated screen");
+		}
 
 	}
 
