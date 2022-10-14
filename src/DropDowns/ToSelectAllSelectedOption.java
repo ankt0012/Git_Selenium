@@ -10,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.google.common.collect.MultimapBuilder.SortedSetMultimapBuilder;
-
 public class ToSelectAllSelectedOption {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
