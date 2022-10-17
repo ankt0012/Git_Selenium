@@ -1,4 +1,4 @@
-package ScreenShots;
+package TakesScreenShot;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,7 +28,7 @@ public class ToTakeScreenshotOfWebElement {
 
         WebElement element = driver.findElement(By.xpath("//div[text()="));
         File source = element.getScreenshotAs(OutputType.FILE);
-        File destination = new File("./ScreenShots/elementShot" + sysdate + ".png");
+        File destination = new File("./Screenshots/elementShot" + sysdate + ".png");
         Files.copy(source, destination);
 
     }
