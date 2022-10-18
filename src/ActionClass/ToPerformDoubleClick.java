@@ -16,12 +16,12 @@ public class ToPerformDoubleClick {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://demoapp.skillrary.com/product.php?product=selenium-training");
 
-        WebElement addButton = driver.findElement(By.xpath("//i[@class='fa fa-minus']"));
+        WebElement addButton = driver.findElement(By.xpath("//i[@class='fa fa-plus']"));
 
         Actions action = new Actions(driver);
         action.doubleClick(addButton).perform();
         Thread.sleep(2000);
-        action.doubleClick(addButton).perform();
+        // action.doubleClick(addButton).perform();
 
     }
 
