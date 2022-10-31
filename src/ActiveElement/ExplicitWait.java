@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+// import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWait {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class ExplicitWait {
         driver.findElement(By.id("email")).sendKeys("akrjee15@gmail.com");
 
         WebElement element = driver.findElement(By.xpath("//button[contains(text(), 'Continue')]"));
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        // WebDriverWait wait = new WebDriverWait(driver, 20);
         element.click();
 
     }

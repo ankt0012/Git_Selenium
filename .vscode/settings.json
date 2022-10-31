@@ -2,6 +2,27 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "d:\\selenium-server-standalone-3.141.59.jar",
-        "jars/selenium-server-standalone-3.141.59.jar"
+        "jars/selenium-server-standalone-3.141.59.jar",
+        "jars/commons-codec-1.15.jar",
+        "jars/commons-collections4-4.4.jar",
+        "jars/commons-compress-1.21.jar",
+        "jars/commons-io-2.11.0.jar",
+        "jars/commons-logging-1.2.jar",
+        "jars/commons-math3-3.6.1.jar",
+        "jars/curvesapi-1.07.jar",
+        "jars/jakarta.activation-2.0.1.jar",
+        "jars/jakarta.xml.bind-api-3.0.1.jar",
+        "jars/log4j-api-2.18.0.jar",
+        "jars/poi-5.2.3.jar",
+        "jars/poi-examples-5.2.3.jar",
+        "jars/poi-excelant-5.2.3.jar",
+        "jars/poi-javadoc-5.2.3.jar",
+        "jars/poi-ooxml-5.2.3.jar",
+        "jars/poi-ooxml-full-5.2.3.jar",
+        "jars/poi-ooxml-lite-5.2.3.jar",
+        "jars/poi-scratchpad-5.2.3.jar",
+        "jars/slf4j-api-1.7.36.jar",
+        "jars/SparseBitSet-1.2.jar",
+        "jars/xmlbeans-5.1.1.jar"
     ]
 }

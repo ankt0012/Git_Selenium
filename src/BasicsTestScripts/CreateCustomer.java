@@ -45,13 +45,13 @@ public class CreateCustomer {
         TaskPage task = new TaskPage(driver);
         task.clickOnNewCustomerButton();
 
-        String expectedCustomerName = "Ankit001223";
+        String expectedCustomerName = "Ankit001234";
 
         CreateNewCustomerPage newCustomer = new CreateNewCustomerPage(driver);
         newCustomer.createNewCustomer(expectedCustomerName, "Delhi");
 
         CustomerDetailsPage customerDetails = new CustomerDetailsPage(driver);
-        String actualCustomerName= customerDetails.verifyCustomerName();
+        String actualCustomerName= customerDetails.verifyCustomerName(expectedCustomerName);
 
         Assert.assertEquals(actualCustomerName, expectedCustomerName);
         System.out.println("Pass: The Customer Name has been verified.");

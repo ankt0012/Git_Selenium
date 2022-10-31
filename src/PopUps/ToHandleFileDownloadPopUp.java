@@ -21,7 +21,7 @@ public class ToHandleFileDownloadPopUp {
          * robot.keyPress(KeyEvent.VK_ENTER);
          */
 
-        Runtime.getRuntime().exec("./AutoIt/FileUpload.exe");
+        // Runtime.getRuntime().exec("./AutoIt/FileUpload.exe");
 
     }
     
