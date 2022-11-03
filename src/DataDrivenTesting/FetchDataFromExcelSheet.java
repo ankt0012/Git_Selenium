@@ -18,7 +18,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class FetchDataFromExcelSheet {
 
     public static void main(String[] args) throws EncryptedDocumentException, IOException {
-        FileInputStream fis= new FileInputStream(".TestData/ExcelData.xlsx");
+        FileInputStream fis= new FileInputStream("./TestData/URL.xlsx");
         Workbook workbook  = WorkbookFactory.create(fis);
 
         Sheet sheet = workbook.getSheet("sheet1");
@@ -34,7 +34,10 @@ public class FetchDataFromExcelSheet {
         System.out.println("the URl is : "+ password);
 
         double num = row.getCell(3).getNumericCellValue();
+        boolean bool = row.getCell(4).getBooleanCellValue();
         
+        System.out.println(num);
+        System.out.println(bool);
         
 
 
